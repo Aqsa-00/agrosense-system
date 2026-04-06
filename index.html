@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="AgroSense - Smart Farming with Intelligent Monitoring. Monitor crops, detect pests, and improve yield using IoT insights.">
+    <title>Agrosense | Smart Farming SaaS</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">
+                <h1>Agro<span>Sense</span></h1>
+            </div>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonial">Testimonials</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="auth-buttons" id="auth-buttons">
+                    <button class="btn btn-login" onclick="openModal('loginModal')">Log In</button>
+                    <button class="btn btn-primary" onclick="openModal('registerModal')">Sign Up</button>
+                </div>
+            </nav>
+            <!-- <div class="auth-buttons" id="auth-buttons">
+                <button class="btn btn-login" onclick="openModal('loginModal')">Log In</button>
+                <button class="btn btn-primary" onclick="openModal('registerModal')">Sign Up</button>
+            </div> -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1>Smart Farming with <span class="highlight">Intelligent</span> Monitoring</h1>
+                    <p>Maximize your yield and minimize risks with real-time IoT insights, pest detection alerts, and
+                        soil
+                        analytics directly from your fields.</p>
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-large" onclick="openModal('registerModal')">
+                            Start Smart Farming Today</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/agriculture.avif">
+                    <div class="glass-card">
+                        <div class="stat">
+                            <h3>98%</h3>
+                            <p>Accuracy</p>
+                        </div>
+                        <div class="stat">
+                            <h3>+40%</h3>
+                            <p>Crop Yield</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Section -->
+        <section class="features section" id="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Why Choose Us?</h2>
+                    <p>Advanced tools built for modern agriculture.</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="icon">🌱</div>
+                        <h3>Smart Crop Monitoring</h3>
+                        <p>Track the health of your crops in real-time remotely via IoT sensors spread across your
+                            fields.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🐛</div>
+                        <h3>Pest Detection Alerts</h3>
+                        <p>Early warnings of pest infestations powered by intelligent data analytics and computer vision
+                            models.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">💧</div>
+                        <h3>Soil & Climate Insights</h3>
+                        <p>Get precise recommendations for watering and fertilization matching your soil and local
+                            climate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing section bg-light" id="pricing">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Simple, Transparent Pricing</h2>
+                    <p>Choose the plan that fits your farm's needs.</p>
+                </div>
+                <div class="pricing-grid">
+                    <!-- Card 1 -->
+                    <div class="pricing-card">
+                        <h3>Basic Plan</h3>
+                        <div class="price">$29 <span>/mon</span></div>
+                        <ul>
+                            <li>Basic Crop Monitoring</li>
+                            <li>Daily Reports</li>
+                            <li>Email Support</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="openModal('registerModal')">
+                            Get Started </button>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="pricing-card popular">
+                        <div class="badge">Most Popular</div>
+                        <h3>Pro Plan</h3>
+                        <div class="price">$79<span>/mo</span></div>
+                        <ul>
+                            <li>Real-Time Analytics</li>
+                            <li>Pest Detection Alerts</li>
+                            <li>Soil Insights</li>
+                            <li>24/7 Priority Support</li>
+                        </ul>
+                        <button class="btn btn-primary" onclick="openModal('registerModal')">Get Started</button>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="pricing-card">
+                        <h3>Enterprise</h3>
+                        <div class="price">$199<span>/mo</span></div>
+                        <ul>
+                            <li>Custom IoT Integration</li>
+                            <li>Dedicated Account Manager</li>
+                            <li>Advanced AI Models</li>
+                            <li>API Access</li>
+                        </ul>
+                        <button class="btn btn-outline" onclick="openModal('registerModal')">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Sections -->
+        <section class="testimonial section" id="testimonial">
+            <div class="container">
+                <div class="section-title">
+                    <h2>What Farmers Say</h2>
+                </div>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <p class="quote">"AgroSense completely transformed how we manage our irrigation. The soil
+                            insights alone saved us 30% in water usage this season."</p>
+                        <div class="author">
+                            <strong>John Anderson</strong>
+                            <span>Corn Farmer, Iowa</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">"The early pest detection saved our entire wheat crop. It notified us days
+                            before
+                            we would have noticed visually. Incredible system!"</p>
+                        <div class="author">
+                            <strong>Maria Garcia</strong>
+                            <span>Wheat Grower, Texas</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Blog Section/ Dynamic -->
+        <section class="blog section bg-light" id="blog">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Farming Insights & News</h2>
+                    <p>Stay updated with the latest in smart agriculture.</p>
+                </div>
+                <div id="blog-grid" class="blog-grid">
+                    <!-- Posts will be injected here via JavaScript -->
+                    <div class="loading">Loading insights...</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Auth Modals -->
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Welcome Back</h2>
+            <p>Login to access your dashboard.</p>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <div id="loginMessage" class="form-message"></div>
+                <button type="submit" class="btn btn-primary btn-block">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('registerModal')">&times;</span>
+            <h2>Join AgroSense</h2>
+            <p>Start your smart farming journey today.</p>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Full Name</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email Address</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div id="registerMessage" class="form-message"></div>
+                <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>Agro<span>Sense</span></h3>
+                <p>Empowering farmers with intelligent monitoring solutions for a sustainable future.</p>
+                <div class="social-links">
+                    <a href="#">Fb</a>
+                    <a href="#">Tw</a>
+                    <a href="#">In</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us </h4>
+                <p>Email: hello@agrosense.com</p>
+                <p>Phone: +1 800 123 4567</p>
+                <p>123 Farm Road, Valley, CA</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AgroSense. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
