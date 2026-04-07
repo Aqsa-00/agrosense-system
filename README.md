@@ -71,6 +71,13 @@ Follow these steps to set up the project locally:
 | `/api/posts/users/register.php` | POST | New user registration |
 | `/api/posts/create.php` | POST | Create a new blog post |
 
+1. Clone the repository:
+https://github.com/Aqsa-00/agrosense-system
+
+## 🔗 Live Demo
+
+👉(https://agrosense-system.netlify.app/)
+
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
